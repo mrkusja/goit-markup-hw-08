@@ -1,0 +1,18 @@
+.logo_them_light {
+    margin-right: 90px;
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+    color: var(--logo-light-them-color);
+}
+
+.logo_them_dark {
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+    color: var(--logo-dark-them-color);
+}
+
+.logo-icon {
+    color: var(--accent-color);
+}
