@@ -30,6 +30,11 @@
         line-height: 0;
         fill: #212121;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
     }
 }
     
