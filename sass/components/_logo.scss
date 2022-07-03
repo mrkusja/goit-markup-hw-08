@@ -1,5 +1,4 @@
 .logo_them_light {
-    margin-right: 90px;
     font-family: var(--secondary-font);
     @include font(26px, 700, 31px);
     letter-spacing: 0.03em;
@@ -15,4 +14,16 @@
 
 .logo-icon {
     color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+    .logo_them_light {
+        margin-right: 88px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo_them_light {
+         margin-right: 93px;
+    }
 }
