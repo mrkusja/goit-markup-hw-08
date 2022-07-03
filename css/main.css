@@ -860,6 +860,21 @@ ol {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: flex;
+  }
+}
 .team {
   background-color: var(--our-team-background-color);
 }
