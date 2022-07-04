@@ -1,3 +1,9 @@
+@media screen and (max-width:1199px) {
+    .about {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .about__item {
             display: flex;
@@ -37,7 +43,9 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            @extend %align;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 370px;
             height: 70px;
             background-color: rgba(47, 48, 58, 0.8);
