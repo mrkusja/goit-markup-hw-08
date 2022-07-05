@@ -24,6 +24,10 @@
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     .mobile-menu__close-btn {
@@ -45,10 +49,6 @@
 
     .mobile-menu__link.current {
             color: var(--accent-color);
-    }
-
-    .mobile-menu__list {
-        margin-bottom: 302px;       
     }
 
     .mobile-menu__link {

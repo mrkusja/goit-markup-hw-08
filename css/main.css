@@ -140,6 +140,10 @@ ol {
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .mobile-menu__close-btn {
@@ -158,10 +162,6 @@ ol {
 
   .mobile-menu__link.current {
     color: var(--accent-color);
-  }
-
-  .mobile-menu__list {
-    margin-bottom: 302px;
   }
 
   .mobile-menu__link {
@@ -1084,16 +1084,6 @@ ol {
   color: var(--accent-color);
 }
 
-.container-footer {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-left-side {
-  flex-grow: 1;
-  margin-right: 70px;
-}
-
 .footer-right-side-title {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -1105,20 +1095,9 @@ ol {
   margin-bottom: 20px;
 }
 
-.footer-right-side {
-  margin-right: 93px;
-}
-
-.footer-subcribe-form {
-  display: flex;
-  align-items: center;
-}
-
 .footer-subcribe-input {
-  width: 358px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   color: #FFFFFF;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1136,6 +1115,7 @@ ol {
   height: 50px;
   display: flex;
   align-items: center;
+  margin: 0 auto;
   padding-left: 29px;
   font-weight: 700;
   font-size: 16px;
@@ -1157,6 +1137,76 @@ ol {
   fill: #FFFFFF;
 }
 
+@media screen and (max-width: 767px) {
+  .container-footer {
+    text-align: center;
+  }
+
+  .footer-left-side {
+    margin-bottom: 60px;
+  }
+
+  .footer-right-side {
+    margin-bottom: 60px;
+  }
+
+  .footer-subcribe-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-subcribe-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .footer-right-side-title {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+
+  .footer-left-side {
+    flex-grow: 1;
+    margin-right: 70px;
+  }
+
+  .footer-right-side {
+    margin-right: 93px;
+  }
+
+  .footer-subcribe-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-subcribe-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
+  .footer-subscribe-button {
+    align-items: center;
+  }
+
+  .footer-right-side-title {
+    margin-top: 0;
+  }
+}
 .portfolio-menu-btn {
   font-family: var(--primary-font);
   font-weight: 500;
