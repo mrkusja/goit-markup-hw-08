@@ -8,7 +8,7 @@
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -92,8 +92,6 @@
     @extend %align;
     flex-wrap: wrap;
     font-family: var(--primary-font);
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     margin-bottom: 30px;
@@ -108,17 +106,17 @@
         margin-right: 7px;
         cursor: pointer;
 
-        .modal-contacts-form-checkbox:checked + & {
-                background-color: var(--accent-color);
-                border: none;
-                background-image: url(../images/modal/vector.svg);
-                background-repeat: no-repeat;
-                background-size: auto auto;
-                background-position: 50% 50%;
+        .modal-contacts-form-checkbox:checked+& {
+            background-color: var(--accent-color);
+            border: none;
+            background-image: url(../images/modal/vector.svg);
+            background-repeat: no-repeat;
+            background-size: auto auto;
+            background-position: 50% 50%;
         }
 
-        .modal-contacts-form-checkbox:focus + & {
-                    border-color: var(--accent-color);
+        .modal-contacts-form-checkbox:focus+& {
+            border-color: var(--accent-color);
         }
     }
 }
@@ -157,4 +155,18 @@
 
 .modal-form-rules-link {
     color: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+    .modal-contacts-form-checkbox-lable {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-contacts-form-checkbox-lable {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
