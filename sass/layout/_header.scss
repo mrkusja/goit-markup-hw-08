@@ -64,11 +64,7 @@
         .menu__item:not(:last-child) {
             margin-right: 50px;
         }
-    
-        .list-item:not(:last-child) {
-            margin-bottom: 10px;
-        }
-    
+        
         .current {
             position: relative;
     
@@ -132,7 +128,15 @@
                 fill: currentColor;
             }
         }
+        
+        @media screen and (max-width: 1199px) {
+            .list-item:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .header-contacts {
@@ -141,7 +145,7 @@
         }
 
     .list-item:not(:last-child) {
-            padding-bottom: 0px;
+            margin-bottom: 0px;
             margin-right: 50px;
         }
 

@@ -372,6 +372,9 @@ ol {
   transform: translate(-50%, -50%);
   padding: 40px;
   background-color: #FFFFFF;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
 }
 
 .modal-btn-close {
@@ -394,12 +397,6 @@ ol {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -409,6 +406,7 @@ ol {
 .modal-contacts-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .modal-contacts-form-title {
@@ -629,10 +627,6 @@ ol {
     margin-right: 50px;
   }
 
-  .list-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
   .current {
     position: relative;
   }
@@ -692,6 +686,11 @@ ol {
     fill: currentColor;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-contacts {
     display: flex;
@@ -699,7 +698,7 @@ ol {
   }
 
   .list-item:not(:last-child) {
-    padding-bottom: 0px;
+    margin-bottom: 0px;
     margin-right: 50px;
   }
 
@@ -1030,10 +1029,11 @@ ol {
 
 @media screen and (max-width: 767px) {
   .clients-list-link {
-    width: 210px;
+    width: 100%;
   }
 
   .clients-list-item {
+    width: 100%;
     flex-basis: calc((100% - 30px) / 2);
   }
   .clients-list-item:not(:nth-child(2n)) {
@@ -1225,6 +1225,10 @@ ol {
 
   .footer-right-side {
     margin-right: 93px;
+  }
+
+  .footer-subscribe-title {
+    margin-top: 0;
   }
 
   .footer-subcribe-form {
