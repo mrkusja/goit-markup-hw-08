@@ -61,7 +61,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .team-cards {
-        width: 354px;
         flex-basis: calc((100% - 30px) / 2);
                    
         &:not(:nth-child(2n)) {
@@ -76,7 +75,6 @@
 
 @media screen and (min-width: 1200px) {
     .team-cards {
-        width: 270px;
         flex-basis: calc((100% - 90px) / 4);
    
         &:not(:nth-child(4n)) {

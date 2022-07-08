@@ -62,9 +62,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .clients-list-link {
-        width: 226px;
-    }
 
     .clients-list-item {
         flex-basis: calc((100% - 60px) / 3);
@@ -83,10 +80,6 @@
     .clients-title {
         font-size: 33px;
         line-height: 1.17;
-    }
-
-    .clients-list-link {
-        width: 170px;
     }
     
     .clients-list-item {
