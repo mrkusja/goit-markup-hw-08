@@ -6,8 +6,6 @@
     padding: 40px;
     background-color: #FFFFFF;
     width: 100%;
-    max-width: 450px;
-    height: 609px;
 }
 
 .modal-btn-close {
@@ -33,44 +31,16 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .modal {
-        width: 528px;
-        height: 581px;
+        max-width: 450px;
+        height: 609px;
     }
 }
 
-// .modal {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 528px;
-//     height: 581px;
-//     padding: 40px;
-//     background-color: #FFFFFF;
-
-// }
-
-// .modal-btn-close {
-//     position: absolute;
-//     top: 8px;
-//     right: 8px;
-//     @extend %align;
-//     width: 30px;
-//     height: 30px;
-//     padding: 0;
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     border-radius: 50%;
-//     background-color: transparent;
-//     cursor: pointer;
-// }
-
-// .modal-btn-close-icon {
-//     fill: #000000;
-
-//     .modal-btn-close:hover &,
-//     .modal-btn-close:focus & {
-//             fill: var(--accent-color);
-//     }
-// }
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+        height: 581px;
+    }
+}
